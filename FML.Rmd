@@ -1,0 +1,31 @@
+---
+title: "fml aassigment"
+author: "faisal"
+date: "2024-02-04"
+output: html_document
+---
+
+```{r}
+library(tinytex)
+library(ggplot2)
+getwd()
+setwd("C:/Users/Syed's/OneDrive/Documents/FML")
+syed<-read.csv("assignment1.csv")
+summary(syed)
+syed
+hist(syed$DV)
+
+```
+
+
+```{r}
+library(ggplot2)
+getwd()
+setwd("C:/Users/Syed's/OneDrive/Documents/FML")
+syed<-read.csv("assignment1.csv")
+plot(syed$DV,syed$BA)
+summary(syed)
+syed
+plot( syed$DV,syed$BA, main = "Scatter Plot", xlab = "DV Marks", ylab = "BA Marks", pch = 16, col = "blue") 
+
+```
